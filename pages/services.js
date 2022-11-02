@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
-const about = () => {
+const services = () => {
   return (
     <div>
       <Head>
-        <title>about-buildit</title>
+        <title>service</title>
         <meta
           name='description'
           content='Its all about buildit service details info. How we works & how you can find us.'
@@ -12,9 +12,9 @@ const about = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <h2>About</h2>
+      <h2>Services</h2>
     </div>
   )
 }
 
-export default about
+export default services

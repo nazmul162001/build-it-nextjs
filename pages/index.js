@@ -8,7 +8,7 @@ export default function Home() {
         <meta name='description' content='Its a Building construction service related website ' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      homepage
+      <h2>homepage</h2>
     </div>
   )
 }
