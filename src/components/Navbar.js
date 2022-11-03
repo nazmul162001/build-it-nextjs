@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Box, Typography, styled, Button } from '@mui/material'
+import { AppBar, Toolbar, Box, Typography, styled, Button, Tabs, Tab } from '@mui/material'
 import logo from '../../public/img/logo2.png'
 import Image from 'next/image'
 import Link from 'next/link'
