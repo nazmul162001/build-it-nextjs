@@ -15,6 +15,47 @@ a {
   box-sizing: border-box;
 }
 
+/* flex  */
+.flex{
+  display: flex;
+  gap: 10px;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-center{
+  justify-items: center;
+}
+
+/* padding  */
+.p-5{
+  padding: 10px;
+}
+.p-10{
+  padding: 20px;
+}
+.px-5{
+  padding: 0 36px;
+}
+.px-10{
+  padding: 0 52px;
+}
+
+py-1{
+  padding: 5px 0;
+}
+
+/* bg-color  */
+bg-primary{
+  background: linear-gradient(104.26deg, rgba(67, 151, 164, 0.2) 0.88%, rgba(91, 204, 222, 0.2) 99.89%), #4397A4;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

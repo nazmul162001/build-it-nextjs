@@ -23,9 +23,6 @@ export default function Home() {
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
         />
       </Head>
-      <h2>
-      <Button variant="contained">Homepage</Button>
-      </h2>
       
     </div>
   )
