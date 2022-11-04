@@ -10,7 +10,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material'
-import logo from '../../public/img/logo2.png'
+import logo from '/public/img/logo2.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <Tab value='one' label='About' />
                 <Tab value='two' label='Services' />
                 <Tab value='three' label='Projects' />
-                <Tab value='three' label='Contact' />
+                <Tab value='four' label='Contact' />
               </Tabs>
             </Nav>
             <Button variant='contained'>Need a Project?</Button>
