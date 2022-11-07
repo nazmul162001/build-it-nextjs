@@ -22,7 +22,6 @@ export default function Home() {
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
         />
       </Head>
-      <p>HomePage</p>
     </div>
   )
 }
