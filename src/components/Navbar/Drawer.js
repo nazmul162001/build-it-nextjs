@@ -1,101 +1,52 @@
-import { useState } from 'react'
-import Image from 'next/image'
-import logo from '/public/img/logo2.png'
 import {
-  Divider,
   Drawer,
-  IconButton,
   List,
-  ListItem,
+  ListItemButton,
   ListItemText,
-  makeStyles,
-} from '@material-ui/core'
-import { Button, useMediaQuery, useTheme } from '@mui/material'
-// import { Link } from "react-router-dom";
-import Link from 'next/link'
+  Divider,
+  styled,
+} from '@mui/material'
+import { DrawerCloseButton } from '../../styles/appbar'
+import { useUIContext } from '../context/ui'
+import CloseIcon from '@mui/icons-material/Close'
+import { lighten } from 'polished'
+import { Colors } from "../../styles/theme";
 
-import MenuIcon from '@material-ui/icons/Menu'
+const MiddleDivider = styled((props) => (
+  <Divider variant='middle' {...props} />
+))``
 
-const useStyles = makeStyles(() => ({
-  link: {
-    textDecoration: 'none',
-    color: 'black',
-    fontSize: '20px',
-  },
-  icon: {
-    color: 'black',
-    padding: '0',
+export default function AppDrawer() {
+  const { drawerOpen, setDrawerOpen } = useUIContext()
 
-  },
-}))
-
-function DrawerComponent() {
-  const classes = useStyles()
-  const [openDrawer, setOpenDrawer] = useState(false)
-
-  const theme = useTheme()
-  const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
-
-  // console.log(isMatch)
-  
-  
   return (
     <>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      {drawerOpen && (
+        <DrawerCloseButton onClick={() => setDrawerOpen(false)}>
+          <CloseIcon
+            sx={{ fontSize: '2.5rem', color: lighten(0.09, Colors.secondary) }}
+          />
+        </DrawerCloseButton>
+      )}
+      <Drawer open={drawerOpen}>
         <List>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href='/'>
-                <Image src={logo} alt='/logo' width={0} height={50} />
-              </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href='/about' className={classes.link}>
-                About
-              </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href='/services' className={classes.link}>
-                Services
-              </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href='/projects' className={classes.link}>
-                Projects
-              </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href='/contact' className={classes.link}>
-                Contact
-              </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
+          <ListItemButton>
+            <ListItemText>About</ListItemText>
+          </ListItemButton>
+          <MiddleDivider />
+          <ListItemButton>
+            <ListItemText>Services</ListItemText>
+          </ListItemButton>
+          <MiddleDivider />
+          <ListItemButton>
+            <ListItemText>Projects</ListItemText>
+          </ListItemButton>
+          <MiddleDivider />
+          <ListItemButton>
+            <ListItemText>Contact</ListItemText>
+          </ListItemButton>
         </List>
       </Drawer>
-      <IconButton
-        onClick={() => setOpenDrawer(!openDrawer)}
-        className={classes.icon}
-      >
-        <MenuIcon style={{fontSize: '45px'}} />
-      </IconButton>
-      {!isMatch && <Link href='/'>
-        <Image src={logo} alt='/logo' width={0} height={50} />
-      </Link>}
-      <Button style={{background: '#4398A5', color: 'white', padding: '5px 15px', borderRadius: '5px'}} variant='contained'>Need a Project?</Button>
     </>
   )
 }
-export default DrawerComponent

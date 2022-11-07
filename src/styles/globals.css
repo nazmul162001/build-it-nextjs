@@ -75,3 +75,16 @@ bg-primary{
 .p-20{
   padding: 20px;
 }
+
+/* .hero-bg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('/public/img/hero/hero-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+} */
