@@ -30,6 +30,7 @@ export const MyList = styled(List)(({ type }) => ({
     display: type === "row" ? "flex" : "block",
   justifyContent: "center",
   alignItems: "center",
+  color: Colors.muted,
 }));
 
 // drawerClose Button 
