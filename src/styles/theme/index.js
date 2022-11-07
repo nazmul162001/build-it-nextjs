@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles'
-import { darken, lighten } from "polished";
+import { lighten } from "polished";
 
-export const DrawerWidth = 250;
+export const DrawerWidth = 230;
 
 export const Colors = {
   primary: '#4397A4',

@@ -10,7 +10,7 @@ import logo from '/public/img/logo.svg'
 
 export default function NavbarDesktop({ matches }) {
   return (
-    <AppbarContainer>
+    <AppbarContainer sx={{padding: '10px 30px'}}>
       <AppbarHeader>
       <Image
       src={logo}
