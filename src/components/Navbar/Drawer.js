@@ -33,25 +33,31 @@ export default function AppDrawer() {
       )}
       <Drawer open={drawerOpen}>
         {/* Drawer /Logo */}
-        <AppbarHeader sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <AppbarHeader
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Image src={logo} alt='logo' width={150} height={80} />
         </AppbarHeader>
 
         {/* Drawer menu  */}
         <List>
-          <ListItemButton>
+          <ListItemButton onClick={() => setDrawerOpen(false)}>
             <ListItemText sx={{ color: Colors.muted }}>About</ListItemText>
           </ListItemButton>
           <MiddleDivider />
-          <ListItemButton>
+          <ListItemButton onClick={() => setDrawerOpen(false)}>
             <ListItemText sx={{ color: Colors.muted }}>Services</ListItemText>
           </ListItemButton>
           <MiddleDivider />
-          <ListItemButton>
+          <ListItemButton onClick={() => setDrawerOpen(false)}>
             <ListItemText sx={{ color: Colors.muted }}>Projects</ListItemText>
           </ListItemButton>
           <MiddleDivider />
-          <ListItemButton>
+          <ListItemButton onClick={() => setDrawerOpen(false)}>
             <ListItemText sx={{ color: Colors.muted }}>Contact</ListItemText>
           </ListItemButton>
         </List>
