@@ -1,17 +1,7 @@
 import Layout from '../components/Layout'
 import '../styles/globals.css'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#4398A5'
-    },
-    secondary: {
-      main: '#486A6F'
-    },
-  },
-})
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../styles/theme'
 
 function MyApp({ Component, pageProps }) {
   return (

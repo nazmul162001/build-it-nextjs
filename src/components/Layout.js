@@ -1,16 +1,17 @@
-
+import Appbar from '../components/Navbar'
 import Footer from './Footer/Footer'
-import Navbar from './Navbar/Navbar'
-
+import AppDrawer from './Navbar/Drawer'
+import { UIProvider } from './context/ui'
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <>
-        <Navbar />
+      <UIProvider>
+        <Appbar />
         {children}
         {/* <Footer /> */}
-      </>
+        <AppDrawer />
+      </UIProvider>
     </div>
   )
 }
