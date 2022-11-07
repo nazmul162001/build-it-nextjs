@@ -13,6 +13,7 @@ import Link from 'next/link'
 export default function NavbarDesktop({ matches }) {
   return (
     <AppbarContainer sx={{ padding: '10px 30px' }}>
+      {/* logo  */}
       <AppbarHeader>
         <Link href='/'>
           <Image src={logo} alt='logo' width={150} height={80} />
