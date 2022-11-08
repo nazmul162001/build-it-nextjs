@@ -33,6 +33,7 @@ export default function Home() {
       </Head>
       {/* Banner Section  */}
       <Banner />
+      <h1>margin</h1>
     </div>
   )
 }

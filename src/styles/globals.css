@@ -5,10 +5,10 @@ body {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
 }
-.set-bg{
+.set-bg {
   /* background-color: #E1EBFA; */
   background-color: white;
 }
-.remove-bg{
+.remove-bg {
   background-color: transparent;
 }
