@@ -9,10 +9,24 @@ import Image from 'next/image'
 import logo from '/public/img/logo.svg'
 import { Colors } from '../../styles/theme'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function NavbarDesktop({ matches }) {
+  // const [color, setColor] = useState(false)
+  // const changeColor = () => {
+  //   if (window.scrollY >= 90) {
+  //     setColor(true)
+  //   } else {
+  //     setColor(false)
+  //   }
+  // }
+  // window.addEventListener('scroll', changeColor)
+  // className={color ? 'set-bg' : 'remove-bg'}
+
   return (
-    <AppbarContainer sx={{ padding: '10px 30px' }}>
+    <AppbarContainer
+      sx={{ padding: '5px 30px' }}
+    >
       {/* logo  */}
       <AppbarHeader>
         <Link href='/'>
@@ -34,7 +48,7 @@ export default function NavbarDesktop({ matches }) {
         </ListItemButton>
       </MyList>
       <GetProject>
-        <Button variant='contained'>Get a Project?</Button>
+        <Button variant='contained'>Need a Project?</Button>
       </GetProject>
     </AppbarContainer>
   )

@@ -9,6 +9,11 @@ export const AppbarContainer = styled(Box)(() => ({
   marginTop: 4,
   justifyContent: 'space-between',
   alignItems: 'center',
+  transition: 'all .2s ease-in',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
 }))
 
 export const GetProject = styled(Box)(() => ({

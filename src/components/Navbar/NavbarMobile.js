@@ -27,7 +27,7 @@ export default function NavbarMobile() {
         </AppbarHeader>
       )}
       <GetProject>
-        <Button variant='contained'>Get a Project?</Button>
+        <Button variant='contained'>Need a Project?</Button>
       </GetProject>
     </AppbarContainer>
   )
