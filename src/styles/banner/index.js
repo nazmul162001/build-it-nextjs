@@ -22,7 +22,8 @@ export const BannerContent = styled(Box)(() => ({
   flexDirection: 'column',
   justifyContent: 'center',
   maxwidth: 420,
-  padding: '30px',
+  padding: '30px 30px 0px 70px',
+  marginTop: '70px',
 }))
 export const BannerImageContent = styled(Box)(() => ({
   backgroundImage: `url(${bg.src})`,
@@ -38,19 +39,32 @@ export const BannerImageContent = styled(Box)(() => ({
 }))
 
 export const BannerTitle = styled(Typography)(({ theme }) => ({
-  fontSize: '72px',
+  fontSize: '64px',
+  fontWeight: '700',
+  lineHeight: '72px',
   marginBottom: '20px',
+  color: Colors.textColor,
   [theme.breakpoints.down('md')]: {
-    fontSize: '42px',
+    fontSize: '36px',
   },
 }))
 
 export const BannerDescription = styled(Typography)(({ theme }) => ({
   lineHeight: 1.25,
   marginBottom: '3em',
+  color: Colors.primary,
   [theme.breakpoints.down('md')]: {
     lineHeight: 1.15,
     letterSpacing: 1.15,
     marginBottom: '1.5em',
+  },
+}))
+
+export const BannerButton = styled(Box)(({theme}) => ({
+  display: 'flex',
+  marginTop: '40px',
+  gap: 20,
+  [theme.breakpoints.down('md')]: {
+    justifyContent: 'center',
   },
 }))

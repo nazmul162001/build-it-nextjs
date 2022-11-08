@@ -25,7 +25,7 @@ export default function NavbarDesktop({ matches }) {
 
   return (
     <AppbarContainer
-      sx={{ padding: '5px 30px' }}
+      sx={{ padding: '5px 75px' }}
     >
       {/* logo  */}
       <AppbarHeader>
