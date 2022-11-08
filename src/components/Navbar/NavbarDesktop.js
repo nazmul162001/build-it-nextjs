@@ -9,7 +9,6 @@ import Image from 'next/image'
 import logo from '/public/img/logo.svg'
 import { Colors } from '../../styles/theme'
 import Link from 'next/link'
-import { useState } from 'react'
 
 export default function NavbarDesktop({ matches }) {
   // const [color, setColor] = useState(false)

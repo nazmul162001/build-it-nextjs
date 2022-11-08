@@ -17,6 +17,7 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
     textAlign: 'center',
     height: '100%',
     overflow: 'none',
+    paddingTop: '100px',
   },
 }))
 
