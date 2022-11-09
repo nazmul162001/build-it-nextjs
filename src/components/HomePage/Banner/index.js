@@ -7,8 +7,6 @@ import {
   BannerContainer,
   BannerContent,
   BannerDescription,
-  BannerGridContainer,
-  BannerGridContainer2,
   BannerImageContent,
   BannerImageContentMain,
   BannerTitle,
