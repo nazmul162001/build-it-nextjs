@@ -6,7 +6,7 @@ import {Colors, DrawerWidth} from '../theme'
 // container
 export const AppbarContainer = styled(Box)(() => ({
   display: 'flex',
-  marginTop: 4,
+  // marginTop: 4,
   justifyContent: 'space-between',
   alignItems: 'center',
   transition: 'all .2s ease-in',
@@ -14,6 +14,7 @@ export const AppbarContainer = styled(Box)(() => ({
   top: 0,
   left: 0,
   right: 0,
+  zIndex: 1000,
 }))
 
 export const GetProject = styled(Box)(() => ({
@@ -40,8 +41,8 @@ export const MyList = styled(List)(({ type }) => ({
 
 // drawerClose Button 
 export const DrawerCloseButton = styled(IconButton)(() => ({
-    position: 'absolute',
+    position: 'fixed',
     top: 10,
     left: DrawerWidth,
-    zIndex: 1999,      
+    zIndex: 10000,      
   }));
