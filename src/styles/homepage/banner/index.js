@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
-import { Colors } from '../theme'
+import { Colors } from '../../theme'
 import bg from '/public/img/banner/banner-bg.png'
 
 export const BannerContainer = styled(Box)(({ theme }) => ({
@@ -135,7 +135,7 @@ export const ImageOne = styled(Box)(({ theme }) => ({
     maxHeight: 80,
   },
 }))
-export const ImageTwo = styled(Box)(({theme}) => ({
+export const ImageTwo = styled(Box)(({ theme }) => ({
   maxWidth: 210,
   maxHeight: 150,
   width: '100%',
@@ -147,7 +147,7 @@ export const ImageTwo = styled(Box)(({theme}) => ({
     maxHeight: 150,
   },
 }))
-export const ImageThree = styled(Box)(({theme}) => ({
+export const ImageThree = styled(Box)(({ theme }) => ({
   maxWidth: 125,
   maxHeight: 125,
   width: '100%',
@@ -165,7 +165,7 @@ export const ImageFour = styled(Box)(() => ({
   width: '100%',
   height: '100%',
 }))
-export const ImageFive = styled(Box)(({theme}) => ({
+export const ImageFive = styled(Box)(({ theme }) => ({
   maxWidth: 185,
   maxHeight: 185,
   width: '100%',
