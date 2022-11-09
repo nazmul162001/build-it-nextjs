@@ -4,10 +4,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
+  overflow-x: hidden;
 }
 .set-bg {
-  /* background-color: #E1EBFA; */
-  background-color: white;
+  background-color: #E1EBFA;
 }
 .remove-bg {
   background-color: transparent;

@@ -7,8 +7,6 @@ import {
   BannerContainer,
   BannerContent,
   BannerDescription,
-  BannerGridContainer,
-  BannerGridContainer2,
   BannerImageContent,
   BannerImageContentMain,
   BannerTitle,
@@ -17,7 +15,7 @@ import {
   ImageOne,
   ImageThree,
   ImageTwo,
-} from '../../../styles/banner'
+} from '../../../styles/homepage/banner'
 import image1 from '/public/img/banner/banner-1.svg'
 import image2 from '/public/img/banner/banner-2.svg'
 import image3 from '/public/img/banner/banner-3.svg'

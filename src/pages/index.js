@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
 import Banner from '../components/HomePage/Banner'
+import Innovative from '../components/HomePage/Innovative'
+import Company from '../components/HomePage/Company'
 
 export default function Home() {
   return (
@@ -33,7 +35,8 @@ export default function Home() {
       </Head>
       {/* Banner Section  */}
       <Banner />
-      <h1>margin</h1>
+      <Innovative />
+      <Company />
     </div>
   )
 }

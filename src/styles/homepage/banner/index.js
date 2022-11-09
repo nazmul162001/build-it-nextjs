@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
-import { Colors } from '../theme'
+import { Colors } from '../../theme'
 import bg from '/public/img/banner/banner-bg.png'
 
 export const BannerContainer = styled(Box)(({ theme }) => ({
@@ -102,6 +102,7 @@ export const Banner1 = styled(Box)(({ theme }) => ({
   gridTemplateColumns: 'repeat(3, 1fr)',
   alignItems: 'end',
   justifyItems: 'center',
+  gap: 10,
   [theme.breakpoints.down('md')]: {
     gap: 5,
   },
@@ -115,7 +116,7 @@ export const Banner2 = styled(Box)(({ theme }) => ({
   justifyItems: 'start',
   gap: 25,
   [theme.breakpoints.down('md')]: {
-    gap: 10,
+    gap: 25,
   },
 }))
 
@@ -129,26 +130,34 @@ export const ImageOne = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'end',
   justifyContent: 'flex-end',
-  [theme.breakpoints.down('md')]: {
-    maxWidth: 145,
-    maxHeight: 145,
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: 80,
+    maxHeight: 80,
   },
 }))
-export const ImageTwo = styled(Box)(() => ({
+export const ImageTwo = styled(Box)(({ theme }) => ({
   maxWidth: 210,
   maxHeight: 150,
   width: '100%',
   height: '100%',
   display: 'flex',
   alignItems: 'end',
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: 150,
+    maxHeight: 150,
+  },
 }))
-export const ImageThree = styled(Box)(() => ({
+export const ImageThree = styled(Box)(({ theme }) => ({
   maxWidth: 125,
   maxHeight: 125,
   width: '100%',
   height: '100%',
   display: 'flex',
   alignItems: 'end',
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: 70,
+    maxHeight: 70,
+  },
 }))
 export const ImageFour = styled(Box)(() => ({
   maxWidth: 290,
@@ -156,9 +165,13 @@ export const ImageFour = styled(Box)(() => ({
   width: '100%',
   height: '100%',
 }))
-export const ImageFive = styled(Box)(() => ({
+export const ImageFive = styled(Box)(({ theme }) => ({
   maxWidth: 185,
   maxHeight: 185,
   width: '100%',
   height: '100%',
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: 100,
+    maxHeight: 100,
+  },
 }))
