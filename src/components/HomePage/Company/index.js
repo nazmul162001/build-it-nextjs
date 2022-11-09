@@ -11,6 +11,10 @@ export default function Company() {
         <CompanyContainer>
             <CompanyImageContainer>
                 <Image src={company1} layout='responsive' ></Image>
+                <Image src={company2} layout='responsive' ></Image>
+                <Image src={company3} layout='responsive' ></Image>
+                <Image src={company4} layout='responsive' ></Image>
+                <Image src={company5} layout='responsive' ></Image>
             </CompanyImageContainer>
         </CompanyContainer>
     )
