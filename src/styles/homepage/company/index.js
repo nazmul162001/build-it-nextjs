@@ -56,3 +56,6 @@ export const CompanyInfoDescription = styled(Typography)(({ theme }) => ({
   color: Colors.muted,
   padding: '20px 0px',
 }))
+
+
+///
