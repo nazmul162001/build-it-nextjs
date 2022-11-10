@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Banner from '../components/HomePage/Banner'
 import Innovative from '../components/HomePage/Innovative'
 import Company from '../components/HomePage/Company'
+import FeaturedList from '../components/HomePage/FeaturedList/FeaturedList'
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
       <Banner />
       <Innovative />
       <Company />
+      <FeaturedList />
     </div>
   )
 }
