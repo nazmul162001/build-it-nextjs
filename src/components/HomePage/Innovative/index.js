@@ -18,7 +18,7 @@ export default function Innovative() {
   return (
     <InnovativeContainer>
       {/* Title  */}
-      <InnovativeTitle variant='h4'>Innovative Execution</InnovativeTitle>
+      <InnovativeTitle variant={matches ? 'h5': 'h4'}>Innovative Execution</InnovativeTitle>
       {/* main content  */}
       <InnovativeContent>
         {/* item-1  */}

@@ -1,5 +1,7 @@
 import { Typography, Button } from '@mui/material'
 import Image from 'next/image'
+import { useTheme } from '@mui/material/styles'
+import { useMediaQuery } from '@mui/material'
 import {
   FeatureContainer,
   FeatureContent,
@@ -15,6 +17,9 @@ import feature3 from '/public/img/feature/feature-3.svg'
 import feature4 from '/public/img/feature/feature-4.svg'
 
 export default function FeaturedList() {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('md'))
+  
   return (
     <FeatureContainer>
       <FeatureGridContainer>
@@ -22,7 +27,7 @@ export default function FeaturedList() {
           <Typography variant='subtitle' sx={{ color: '#5BCCDE' }}>
             Available Properties
           </Typography>
-          <FeatureTitle variant='h3'>Featured Listing</FeatureTitle>
+          <FeatureTitle variant={matches ? 'h5': 'h3'}>Featured Listing</FeatureTitle>
           <FeatureDescription>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit
             sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer

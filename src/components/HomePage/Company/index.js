@@ -1,4 +1,6 @@
 import { Typography, Button } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
+import { useMediaQuery } from '@mui/material'
 import {
   CompanyContainer,
   CompanyDetails,
@@ -17,6 +19,9 @@ import company5 from '/public/img/company/company-5.svg'
 import companyImage from '/public/img/company/companyImage.svg'
 
 export default function Company() {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down('md'))
+  
   return (
     <CompanyContainer>
       {/* company logo  */}
@@ -36,7 +41,7 @@ export default function Company() {
           <Typography variant='subtitle' sx={{ color: '#5BCCDE' }}>
             About Us
           </Typography>
-          <CompanyInfoTitle variant='h3'>
+          <CompanyInfoTitle variant={matches ? 'h5': 'h4'}>
             Owner and investor with a reputation
           </CompanyInfoTitle>
           <CompanyInfoDescription>
