@@ -32,16 +32,28 @@ export default function Banner() {
       <BannerContainer>
         {/* Banner content  */}
         <BannerContent>
-          <BannerTitle variant='h2'>Development Company</BannerTitle>
-          <BannerDescription variant='subtitle'>
-            Forward-thinking real estate developer, owner <br></br> and investor
-            with a reputation
-          </BannerDescription>
+          <BannerTitle variant={matches ? 'h5' : 'h2'}>
+            Development Company
+          </BannerTitle>
+          {matches ? (
+            <BannerDescription variant='body2'>
+              Forward-thinking real estate developer, owner and
+              investor with a reputation
+            </BannerDescription>
+          ) : (
+            <BannerDescription variant='body2'>
+              Forward-thinking real estate developer, owner <br></br> and
+              investor with a reputation
+            </BannerDescription>
+          )}
           <BannerButton>
             <Button variant='contained'>Services</Button>
             <Button
               variant='text'
-              sx={{ padding: matches ? '5px 10px' : '10px 40px', background: '#C6DBFF' }}
+              sx={{
+                padding: matches ? '5px 10px' : '10px 40px',
+                background: '#C6DBFF',
+              }}
             >
               About the Company
             </Button>

@@ -52,10 +52,13 @@ export const CompanyInfoTitle = styled(Typography)(({ theme }) => ({
   padding: '20px 0px',
 }))
 
+export const CompanyInfoDescription2 = styled(Typography)(({ theme }) => ({
+  color: Colors.muted,
+  padding: '20px 0px',
+}))
 export const CompanyInfoDescription = styled(Typography)(({ theme }) => ({
   color: Colors.muted,
   padding: '20px 0px',
 }))
-
 
 ///

@@ -5,6 +5,7 @@ import Innovative from '../components/HomePage/Innovative'
 import Company from '../components/HomePage/Company'
 import FeaturedList from '../components/HomePage/FeaturedList/FeaturedList'
 import Instagram from '../components/HomePage/Instagram'
+import GetInTouch from '../components/HomePage/GetInTouch'
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       <Company />
       <FeaturedList />
       <Instagram />
+      <GetInTouch/>
     </div>
   )
 }

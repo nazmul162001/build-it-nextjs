@@ -34,13 +34,13 @@ export const BannerContent = styled(Box)(({ theme }) => ({
 }))
 
 export const BannerTitle = styled(Typography)(({ theme }) => ({
-  fontSize: '64px',
+  // fontSize: '64px',
   fontWeight: '700',
   lineHeight: '72px',
   marginBottom: '20px',
   color: Colors.textColor,
   [theme.breakpoints.down('md')]: {
-    fontSize: '36px',
+    // fontSize: '36px',
     lineHeight: '40px',
   },
 }))
