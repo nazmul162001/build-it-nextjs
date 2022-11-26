@@ -5,6 +5,9 @@ import { Colors } from '../../theme'
 export const GetInTouchContainer = styled(Box)(({ theme }) => ({
   width: '100%',
   padding: '100px 60px',
+  [theme.breakpoints.down('md')]: {
+    padding: '15px',
+  },
 }))
 export const GetInTouchGridContainer = styled(Box)(({ theme }) => ({
   display: 'grid',
@@ -25,6 +28,10 @@ export const GetInTouchForm = styled(Box)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  width: '100%',
+  [theme.breakpoints.down('md')] : {
+    margin: '15px 0px'
+  }
 }))
 
 export const GetInTouchFormInput = styled(Box)(({ theme }) => ({
@@ -35,4 +42,8 @@ export const GetInTouchFormInput = styled(Box)(({ theme }) => ({
   padding: '25px',
   borderRadius: '5px',
   boxShadow: 'rgba(225, 200, 230, 0.56) 0px 22px 70px 4px',
+  [theme.breakpoints.down('md')]: {
+    margin: '10px 5px',
+    padding: '10px'
+  },
 }))
