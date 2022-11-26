@@ -15,7 +15,7 @@ export const Colors = {
   light: '#aaa',
   muted: '#678C92',
   border: '#DDDFE1',
-  inverse: '#2F3D4A',
+  darkblue: '#486F74',
   shaft: '#333',
   ///////////////
   // Grays

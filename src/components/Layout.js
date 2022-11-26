@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <UIProvider>
         <Appbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         <AppDrawer />
       </UIProvider>
     </div>
