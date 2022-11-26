@@ -9,6 +9,9 @@ export const GetInTouchContainer = styled(Box)(({ theme }) => ({
 export const GetInTouchGridContainer = styled(Box)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
+  [theme.breakpoints.down('md')]: {
+    gridTemplateColumns: 'repeat(1, 1fr)',
+  },
 }))
 export const GetInTouchContent = styled(Box)(({ theme }) => ({}))
 
