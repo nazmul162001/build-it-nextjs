@@ -12,3 +12,10 @@ body {
 .remove-bg {
   background-color: transparent;
 }
+.nav-link{
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.nav-link:active{
+  color: #678C92 ;
+}
