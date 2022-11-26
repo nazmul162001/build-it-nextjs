@@ -4,7 +4,21 @@ import { Colors } from '../theme'
 
 export const AboutContainer = styled(Box)(({ theme }) => ({
     width: '100%',
-    height: '100vh',
+    // height: '100vh',
     background: Colors.secondary,
-    [theme.breakpoints.down('md')]: {},
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    padding: '120px 60px 60px 60px',
+    [theme.breakpoints.down('md')]: {
+        gridTemplateColumns: 'repeat(1, 1fr)',
+    },
+  }))
+
+export const AboutHero = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'center',
+    // position: 'relative',
+  }))
+export const AboutHero2 = styled(Box)(({ theme }) => ({
+   
   }))
