@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material'
 import { ProjectsContainer, ProjectsContent, ProjectsDescription, ProjectsTitle } from '../../styles/projects'
 import { Colors } from '../../styles/theme'
+import CallUs from './CallUs'
 import Project from './Project'
 
 export default function Projects() {
@@ -20,6 +21,7 @@ export default function Projects() {
         </ProjectsContent>
       </ProjectsContainer>
       <Project />
+      <CallUs />
     </>
   )
 }
