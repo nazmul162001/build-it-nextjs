@@ -19,4 +19,6 @@ body {
 .nav-link:active{
   color: #678C92 ;
 }
-
+a.nav-link{
+  color: #678C92;
+}
