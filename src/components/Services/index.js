@@ -20,7 +20,7 @@ export default function Services() {
             Services
           </Typography>
           <ProjectsTitle variant='h3'>
-            Owner and investor with a reputation
+            Million Of People Choose Our Services.
           </ProjectsTitle>
           <ProjectsDescription>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit
