@@ -18,7 +18,7 @@ export const FeatureContent = styled(Box)(({ theme }) => ({
     }
   }))
 export const FeatureContentImage = styled(Box)(({ theme }) => ({
-    padding: '50px',
+    padding: '70px',
   }))
 export const FeatureContentInfo = styled(Box)(({ theme }) => ({
     padding: '50px',
