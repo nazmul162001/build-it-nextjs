@@ -1,20 +1,20 @@
 import Head from 'next/head'
-import About from '../components/About'
+import Contact from '../components/Contact'
 
-const about = () => {
+const contact = () => {
   return (
-    <section className='about'>
+    <section className='contact'>
       <Head>
-        <title>about</title>
+        <title>contact</title>
         <meta
-          name='about'
+          name='contact'
           content='Its a Building construction service related website '
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <About />
+      <Contact />
     </section>
   )
 }
 
-export default about
+export default contact

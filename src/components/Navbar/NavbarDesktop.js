@@ -37,9 +37,9 @@ export default function NavbarDesktop({ matches }) {
       </AppbarHeader>
       <MyList type='row'>
         <Link className='nav-link' sx={{color: Colors.muted}} href='/about'>About</Link>
-        <Link className='nav-link' sx={{color: Colors.muted}} href='/about'>Services</Link>
-        <Link className='nav-link' sx={{color: Colors.muted}} href='/about'>Projects</Link>
-        <Link className='nav-link' sx={{color: Colors.muted}} href='/about'>Contact</Link>
+        <Link className='nav-link' sx={{color: Colors.muted}} href='/services'>Services</Link>
+        <Link className='nav-link' sx={{color: Colors.muted}} href='/projects'>Projects</Link>
+        <Link className='nav-link' sx={{color: Colors.muted}} href='/contact'>Contact</Link>
       </MyList>
       <GetProject>
         <Button variant='contained'>Need a Project?</Button>
