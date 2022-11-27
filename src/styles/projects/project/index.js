@@ -33,7 +33,8 @@ export const ImgBox = styled(Box)(({ theme }) => ({}))
 export const ImgBoxContent = styled(Box)(({ theme }) => ({
   background: 'linear-gradient(88.65deg, #C6DBFF 0%, #E1EBFA 100%)',
   padding: '10px',
-  boxShadow: 'box-shadow: rgba(225, 235, 250 0.56) 0px 22px 70px 4px;',
+  // boxShadow: 'box-shadow: rgba(225, 235, 250 0.56) 0px 22px 70px 4px;',
+  filter: 'drop-shadow(0px 30px 60px rgba(59, 130, 246, 0.25))',
 }))
 
 export const ButtonBox = styled(Box)(({ theme }) => ({

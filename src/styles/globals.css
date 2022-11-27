@@ -22,3 +22,9 @@ body {
 a.nav-link{
   color: #678C92;
 }
+.see-more-hover{
+  transition: all 0.2s ease-in;
+}
+.see-more:hover .see-more-hover{
+  transform: translate(10px);
+}
