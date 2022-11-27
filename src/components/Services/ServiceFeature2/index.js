@@ -15,17 +15,13 @@ import feature2 from '/public/img/services/service2.svg'
 import feature3 from '/public/img/services/service3.svg'
 import { Typography } from '@mui/material'
 import { Colors } from '../../../styles/theme'
-import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
-import ServiceFeature2 from '../ServiceFeature2'
+import TrendingFlatIcon from '@mui/icons-material/TrendingFlat'
 
-export default function ServiceFeature() {
+export default function ServiceFeature2() {
   return (
     <>
       <FeatureContainer>
         <FeatureContent>
-          <FeatureContentImage>
-            <Image src={feature3} layout='responsive' alt=''></Image>
-          </FeatureContentImage>
           <FeatureContentInfo>
             <Typography variant='body1' sx={{ color: Colors.primary }}>
               Service
@@ -78,12 +74,31 @@ export default function ServiceFeature() {
               </FeatureBox1>
             </FeatureContentBox>
           </FeatureContentInfo>
+          <FeatureContentImage>
+            <Image src={feature1} layout='responsive' alt=''></Image>
+          </FeatureContentImage>
         </FeatureContent>
         <SeeMore>
-          <Typography className='see-more' variant='body1' sx={{color: Colors.textColor, fontWeight: 'bold', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>See More <TrendingFlatIcon className='see-more-hover' sx={{marginLeft: '5px'}} /> </Typography>
+          <Typography
+            className='see-more'
+            variant='body1'
+            sx={{
+              color: Colors.textColor,
+              fontWeight: 'bold',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              cursor: 'pointer',
+            }}
+          >
+            See More{' '}
+            <TrendingFlatIcon
+              className='see-more-hover'
+              sx={{ marginLeft: '5px' }}
+            />{' '}
+          </Typography>
         </SeeMore>
       </FeatureContainer>
-      <ServiceFeature2 />
     </>
   )
 }
