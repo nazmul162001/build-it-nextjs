@@ -8,20 +8,21 @@ import {
   FeatureContentInfo,
   FeatureContentTitle,
   SeeMore,
-} from '../../../styles/services/servicefeature'
+} from '../../../styles/services/featureone'
 import Image from 'next/image'
-import feature1 from '/public/img/services/service1.svg'
-import feature2 from '/public/img/services/service2.svg'
 import feature3 from '/public/img/services/service3.svg'
 import { Typography } from '@mui/material'
 import { Colors } from '../../../styles/theme'
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat'
 
-export default function ServiceFeature2() {
+export default function FeatureOne() {
   return (
     <>
       <FeatureContainer>
         <FeatureContent>
+          <FeatureContentImage>
+            <Image src={feature3} layout='responsive' alt=''></Image>
+          </FeatureContentImage>
           <FeatureContentInfo>
             <Typography variant='body1' sx={{ color: Colors.primary }}>
               Service
@@ -74,9 +75,6 @@ export default function ServiceFeature2() {
               </FeatureBox1>
             </FeatureContentBox>
           </FeatureContentInfo>
-          <FeatureContentImage>
-            <Image src={feature1} layout='responsive' alt=''></Image>
-          </FeatureContentImage>
         </FeatureContent>
         <SeeMore>
           <Typography

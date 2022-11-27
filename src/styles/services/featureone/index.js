@@ -31,13 +31,13 @@ export const FeatureContentTitle = styled(Typography)(({ theme }) => ({
 export const FeatureContentDescription = styled(Typography)(({ theme }) => ({
     color: Colors.muted,
   }))
-export const FeatureContentBox = styled(Typography)(({ theme }) => ({
+export const FeatureContentBox = styled(Box)(({ theme }) => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
     gap: 20,
     marginTop: 100
   }))
-export const FeatureBox1 = styled(Typography)(({ theme }) => ({
+export const FeatureBox1 = styled(Box)(({ theme }) => ({
     padding: '30px',
     background: '#C6DBFF',
     boxShadow: '0px 30px 60px rgba(59, 130, 246, 0.25)',
@@ -48,4 +48,3 @@ export const SeeMore = styled(Box)(({ theme }) => ({
     alignItems: 'center',
     padding: '0px 80px'
   }))
-

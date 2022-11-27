@@ -6,7 +6,7 @@ import {
   ProjectsTitle,
 } from '../../styles/services'
 import { Colors } from '../../styles/theme'
-import ServiceFeature from './ServiceFeature'
+import FeatureOne from './FeatureOne'
 
 export default function Services() {
   return (
@@ -28,7 +28,7 @@ export default function Services() {
         </ProjectsContent>
       </ProjectsContainer>
       {/* feature component  */}
-      <ServiceFeature />
+      <FeatureOne />
     </>
   )
 }
