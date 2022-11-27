@@ -36,3 +36,10 @@ export const ImgBoxContent = styled(Box)(({ theme }) => ({
   boxShadow: 'box-shadow: rgba(225, 235, 250 0.56) 0px 22px 70px 4px;',
 }))
 
+export const ButtonBox = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+}))
+

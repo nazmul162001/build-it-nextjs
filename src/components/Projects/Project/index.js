@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import {
+  ButtonBox,
   ImgBox,
   ImgBoxContent,
   InstagramContainer,
@@ -36,6 +37,7 @@ export default function Project() {
         >
           Our Projects
         </Typography>
+        {/* all project  */}
         <InstagramGridContainer>
           <ImgBox>
             <Image src={project6} layout='responsive' alt=''></Image>
@@ -241,8 +243,10 @@ export default function Project() {
               </Typography>
             </ImgBoxContent>
           </ImgBox>
-          
         </InstagramGridContainer>
+        <ButtonBox>
+        <Button variant="contained" sx={{padding: '5px 50px', margin: '20px 0px', textTransform: 'capitalize'}}>More</Button>
+        </ButtonBox>
       </InstagramContent>
     </InstagramContainer>
   )
