@@ -7,6 +7,7 @@ import {
 } from '../../styles/services'
 import { Colors } from '../../styles/theme'
 import FeatureOne from './FeatureOne'
+import FeatureThree from './FeatureThree'
 import FeatureTwo from './FeatureTwo'
 
 export default function Services() {
@@ -31,6 +32,7 @@ export default function Services() {
       {/* feature component  */}
       <FeatureOne />
       <FeatureTwo />
+      <FeatureThree />
     </>
   )
 }
