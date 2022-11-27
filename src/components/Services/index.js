@@ -6,6 +6,7 @@ import {
   ProjectsTitle,
 } from '../../styles/services'
 import { Colors } from '../../styles/theme'
+import FeatureCallUs from './CallUs'
 import FeatureOne from './FeatureOne'
 import FeatureThree from './FeatureThree'
 import FeatureTwo from './FeatureTwo'
@@ -33,6 +34,7 @@ export default function Services() {
       <FeatureOne />
       <FeatureTwo />
       <FeatureThree />
+      <FeatureCallUs />
     </>
   )
 }
