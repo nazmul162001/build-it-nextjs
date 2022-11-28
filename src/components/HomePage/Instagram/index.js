@@ -29,12 +29,12 @@ export default function Instagram() {
           On Instagram
         </Typography>
         <InstagramGridContainer>
-          <Image src={instagram1} layout='responsive'></Image>
-          <Image src={instagram2} layout='responsive'></Image>
-          <Image src={instagram3} layout='responsive'></Image>
-          <Image src={instagram4} layout='responsive'></Image>
-          <Image src={instagram5} layout='responsive'></Image>
-          <Image src={instagram6} layout='responsive'></Image>
+          <Image src={instagram1} layout='responsive' alt=''></Image>
+          <Image src={instagram2} layout='responsive' alt=''></Image>
+          <Image src={instagram3} layout='responsive' alt=''></Image>
+          <Image src={instagram4} layout='responsive' alt=''></Image>
+          <Image src={instagram5} layout='responsive' alt=''></Image>
+          <Image src={instagram6} layout='responsive' alt=''></Image>
         </InstagramGridContainer>
       </InstagramContent>
     </InstagramContainer>

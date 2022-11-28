@@ -65,21 +65,21 @@ export default function Banner() {
           <BannerImageContentMain>
             <Banner1>
               <ImageOne>
-                <Image src={image1} layout='responsive'></Image>
+                <Image src={image1} layout='responsive' alt=''></Image>
               </ImageOne>
               <ImageTwo>
-                <Image src={image2} layout='responsive'></Image>
+                <Image src={image2} layout='responsive' alt=''></Image>
               </ImageTwo>
               <ImageThree>
-                <Image src={image3} layout='responsive'></Image>
+                <Image src={image3} layout='responsive' alt=''></Image>
               </ImageThree>
             </Banner1>
             <Banner2>
               <ImageFour>
-                <Image src={image4} layout='responsive'></Image>
+                <Image src={image4} layout='responsive' alt=''></Image>
               </ImageFour>
               <ImageFive>
-                <Image src={image5} layout='responsive'></Image>
+                <Image src={image5} layout='responsive' alt=''></Image>
               </ImageFive>
             </Banner2>
           </BannerImageContentMain>

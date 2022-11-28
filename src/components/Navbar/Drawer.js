@@ -21,6 +21,7 @@ const MiddleDivider = styled((props) => (
 
 export default function AppDrawer() {
   const { drawerOpen, setDrawerOpen } = useUIContext()
+  console.log(drawerOpen)
 
   return (
     <>
@@ -42,7 +43,7 @@ export default function AppDrawer() {
               alignItems: 'center',
             }}
           >
-            <Image src={logo} alt='logo' width={150} height={80} />
+            <Image src={logo} alt='logo' width={150} height={80}  />
           </AppbarHeader>
         </Link>
 

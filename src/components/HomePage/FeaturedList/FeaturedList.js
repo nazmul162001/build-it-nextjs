@@ -49,11 +49,13 @@ export default function FeaturedList() {
               src={feature1}
               sx={{ marginTop: '8px', verticalAlign: 'middle', width: '100%' }}
               layout='responsive'
+              alt=''
             ></Image>
             <Image
               src={feature2}
               sx={{ marginTop: '8px', verticalAlign: 'middle', width: '100%' }}
               layout='responsive'
+              alt=''
             ></Image>
           </FeatureImageContent>
           <FeatureImageContent>
@@ -61,11 +63,13 @@ export default function FeaturedList() {
               src={feature3}
               sx={{ marginTop: '8px', verticalAlign: 'middle', width: '100%' }}
               layout='responsive'
+              alt=''
             ></Image>
             <Image
               src={feature4}
               sx={{ marginTop: '8px', verticalAlign: 'middle', width: '100%' }}
               layout='responsive'
+              alt=''
             ></Image>
           </FeatureImageContent>
         </FeatureImage>
