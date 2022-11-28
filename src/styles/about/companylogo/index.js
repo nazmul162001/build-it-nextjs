@@ -4,6 +4,8 @@ import { Colors } from '../../theme'
 
 export const CompanyContainer = styled(Box)(({ theme }) => ({
   width: '100%',
+  // height: 600,
+  marginBottom: 150,
   padding: '30px 0px',
   background: 'white',
 }))

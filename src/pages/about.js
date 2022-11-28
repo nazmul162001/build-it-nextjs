@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import AboutCompany from '../components/About/Company'
 import CompanyLogo from '../components/About/CompanyLogo'
+import MeetOurTeam from '../components/About/MeetOurTeam'
 
 const about = () => {
   return (
@@ -18,6 +19,7 @@ const about = () => {
       <About />
       <AboutCompany />
       <CompanyLogo />
+      <MeetOurTeam />
     </section>
   )
 }
