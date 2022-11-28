@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import About from '../components/About'
+import CallUsAbout from '../components/About/CallUs'
 import AboutCompany from '../components/About/Company'
 import CompanyLogo from '../components/About/CompanyLogo'
 import MeetOurTeam from '../components/About/MeetOurTeam'
@@ -20,6 +21,7 @@ const about = () => {
       <AboutCompany />
       <CompanyLogo />
       <MeetOurTeam />
+      <CallUsAbout />
     </section>
   )
 }
