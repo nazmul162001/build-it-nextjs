@@ -28,3 +28,7 @@ a.nav-link{
 .see-more:hover .see-more-hover{
   transform: translate(10px);
 }
+.custom-image{
+  max-width: 300px;
+  width: 100%;
+}
