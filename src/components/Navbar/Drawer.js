@@ -45,16 +45,36 @@ export default function AppDrawer() {
         </AppbarHeader>
 
         {/* Drawer menu  */}
-        <List sx={{display: 'flex', flexDirection: 'column'}}>
-        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/'>Home</Link>
-        <MiddleDivider />
-        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/about'>About</Link>
-        <MiddleDivider />
-        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/services'>Services</Link>
-        <MiddleDivider />
-        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/projects'>Projects</Link>
-        <MiddleDivider />
-        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/contact'>Contact</Link>
+        <List>
+          <Link className='nav-link-mobile' href='/'>
+            <ListItemButton onClick={() => setDrawerOpen(false)}>
+              <ListItemText sx={{ color: Colors.muted }}>Home</ListItemText>
+            </ListItemButton>
+          </Link>
+          <MiddleDivider />
+          <Link className='nav-link-mobile' href='/about'>
+            <ListItemButton onClick={() => setDrawerOpen(false)}>
+              <ListItemText sx={{ color: Colors.muted }}>About</ListItemText>
+            </ListItemButton>
+          </Link>
+          <MiddleDivider />
+          <Link className='nav-link-mobile' href='/services'>
+            <ListItemButton onClick={() => setDrawerOpen(false)}>
+              <ListItemText sx={{ color: Colors.muted }}>Services</ListItemText>
+            </ListItemButton>
+          </Link>
+          <MiddleDivider />
+          <Link className='nav-link-mobile' href='projects'>
+            <ListItemButton onClick={() => setDrawerOpen(false)}>
+              <ListItemText sx={{ color: Colors.muted }}>Projects</ListItemText>
+            </ListItemButton>
+          </Link>
+          <MiddleDivider />
+          <Link className='nav-link-mobile' href='contact'>
+            <ListItemButton onClick={() => setDrawerOpen(false)}>
+              <ListItemText sx={{ color: Colors.muted }}>Contact</ListItemText>
+            </ListItemButton>
+          </Link>
         </List>
       </Drawer>
     </>

@@ -16,6 +16,9 @@ body {
   text-decoration: none;
   padding: 5px 10px;
 }
+.nav-link-mobile{
+  text-decoration: none;
+}
 .nav-link:active{
   color: #678C92 ;
 }
