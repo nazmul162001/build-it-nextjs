@@ -21,7 +21,7 @@ const MiddleDivider = styled((props) => (
 
 export default function AppDrawer() {
   const { drawerOpen, setDrawerOpen } = useUIContext()
-  console.log(drawerOpen)
+  // console.log(drawerOpen)
 
   return (
     <>
