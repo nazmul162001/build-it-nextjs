@@ -34,15 +34,17 @@ export default function AppDrawer() {
       )}
       <Drawer open={drawerOpen}>
         {/* Drawer /Logo */}
-        <AppbarHeader
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Image src={logo} alt='logo' width={150} height={80} />
-        </AppbarHeader>
+        <Link onClick={() => setDrawerOpen(false)} href='/'>
+          <AppbarHeader
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image src={logo} alt='logo' width={150} height={80} />
+          </AppbarHeader>
+        </Link>
 
         {/* Drawer menu  */}
         <List>
