@@ -28,15 +28,17 @@ export const AboutHero = styled(Box)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-
+  position: 'relative',
 }))
 export const AboutHero2 = styled(Box)(({ theme }) => ({
   paddingRight: '50px',
   [theme.breakpoints.down('md')]: {
     paddingRight: '30px',
+    marginTop: '60px',
   },
   [theme.breakpoints.down('sm')]: {
     paddingRight: '5px',
+    marginTop: '60px',
   },
 }))
 

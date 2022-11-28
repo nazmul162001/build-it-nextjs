@@ -32,3 +32,10 @@ a.nav-link{
   max-width: 300px;
   width: 100%;
 }
+.custom-image2{
+  max-width: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+}

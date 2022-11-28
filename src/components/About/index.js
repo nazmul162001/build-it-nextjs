@@ -18,6 +18,7 @@ export default function About() {
         <AboutContainerContent>
           <AboutHero>
             <Image src={about} className='custom-image' alt=''></Image>
+            <Image src={about2} className='custom-image2' alt=''></Image>
           </AboutHero>
           <AboutHero2>
             <Typography sx={{ color: Colors.primary }}>About Us</Typography>
