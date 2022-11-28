@@ -36,6 +36,7 @@ export default function NavbarDesktop({ matches }) {
         </Link>
       </AppbarHeader>
       <MyList type='row'>
+        <Link className='nav-link' href='/'>Home</Link>
         <Link className='nav-link' href='/about'>About</Link>
         <Link className='nav-link' href='/services'>Services</Link>
         <Link className='nav-link' href='/projects'>Projects</Link>

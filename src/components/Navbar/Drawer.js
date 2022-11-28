@@ -12,6 +12,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import { lighten, darken } from 'polished'
 import { Colors } from '../../styles/theme'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from '/public/img/logo.svg'
 
 const MiddleDivider = styled((props) => (
@@ -44,22 +45,16 @@ export default function AppDrawer() {
         </AppbarHeader>
 
         {/* Drawer menu  */}
-        <List>
-          <ListItemButton onClick={() => setDrawerOpen(false)}>
-            <ListItemText sx={{ color: Colors.muted }}>About</ListItemText>
-          </ListItemButton>
-          <MiddleDivider />
-          <ListItemButton onClick={() => setDrawerOpen(false)}>
-            <ListItemText sx={{ color: Colors.muted }}>Services</ListItemText>
-          </ListItemButton>
-          <MiddleDivider />
-          <ListItemButton onClick={() => setDrawerOpen(false)}>
-            <ListItemText sx={{ color: Colors.muted }}>Projects</ListItemText>
-          </ListItemButton>
-          <MiddleDivider />
-          <ListItemButton onClick={() => setDrawerOpen(false)}>
-            <ListItemText sx={{ color: Colors.muted }}>Contact</ListItemText>
-          </ListItemButton>
+        <List sx={{display: 'flex', flexDirection: 'column'}}>
+        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/'>Home</Link>
+        <MiddleDivider />
+        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/about'>About</Link>
+        <MiddleDivider />
+        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/services'>Services</Link>
+        <MiddleDivider />
+        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/projects'>Projects</Link>
+        <MiddleDivider />
+        <Link onClick={()=> setDrawerOpen(false)} className='nav-link' href='/contact'>Contact</Link>
         </List>
       </Drawer>
     </>
