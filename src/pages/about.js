@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About'
 import AboutCompany from '../components/About/Company'
+import CompanyLogo from '../components/About/CompanyLogo'
 
 const about = () => {
   return (
@@ -16,6 +17,7 @@ const about = () => {
       {/* all about page component  */}
       <About />
       <AboutCompany />
+      <CompanyLogo />
     </section>
   )
 }
