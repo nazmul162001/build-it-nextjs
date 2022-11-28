@@ -26,16 +26,16 @@ export default function Company() {
     <CompanyContainer>
       {/* company logo  */}
       <CompanyImageContainer>
-        <Image src={company1} layout='responsive'></Image>
-        <Image src={company2} layout='responsive'></Image>
-        <Image src={company3} layout='responsive'></Image>
-        <Image src={company4} layout='responsive'></Image>
-        <Image src={company5} layout='responsive'></Image>
+        <Image src={company1} layout='responsive' alt=''></Image>
+        <Image src={company2} layout='responsive' alt=''></Image>
+        <Image src={company3} layout='responsive' alt=''></Image>
+        <Image src={company4} layout='responsive' alt=''></Image>
+        <Image src={company5} layout='responsive' alt=''></Image>
       </CompanyImageContainer>
       {/* company details  */}
       <CompanyDetails>
         <CompanyImage>
-          <Image src={companyImage} layout='responsive'></Image>
+          <Image src={companyImage} layout='responsive' alt=''></Image>
         </CompanyImage>
         <CompanyInfo>
           <Typography variant='subtitle' sx={{ color: '#5BCCDE' }}>

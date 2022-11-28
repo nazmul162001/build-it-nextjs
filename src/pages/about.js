@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import About from '../components/About'
+import AboutCompany from '../components/About/Company'
 
 const about = () => {
   return (
@@ -12,7 +13,9 @@ const about = () => {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      {/* all about page component  */}
       <About />
+      <AboutCompany />
     </section>
   )
 }
