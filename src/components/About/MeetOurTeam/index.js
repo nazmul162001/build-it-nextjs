@@ -38,7 +38,7 @@ export default function MeetOurTeam() {
             padding: '0px 0px 30px 0px',
           }}
         >
-          Let's Meet
+          Lets Meet
         </Typography>
         {/* all project  */}
         <InstagramGridContainer>

@@ -15,10 +15,10 @@ export default function Home() {
         {/* google fonts / noto sans  */}
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-        <link
+        {/* <link
           href='https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap'
           rel='stylesheet'
-        ></link>
+        ></link> */}
         <meta
           name='description'
           content='Its a Building construction service related website '
@@ -26,10 +26,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
 
         {/* google  web fonts  */}
-        <link
+        {/* <link
           rel='stylesheet'
           href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
-        />
+        /> */}
         {/* google  web fonts / MUI */}
         <link
           rel='stylesheet'
